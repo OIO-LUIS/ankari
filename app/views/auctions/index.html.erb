@@ -1,0 +1,52 @@
+
+<div class="flex flex-wrap flex-row w-full">
+  <div class="flex flex-row w-full border-2 border-double rounded border-yellow-600 ring-lime-300">
+    <div class="relative flex flex-row">
+      <div class="text-center  flex-1 rotate-180 invert absolute bottom-2 right-8">
+        <br/>
+          <%= vite_image_tag 'images/oioLogo.png' %>
+      </div>
+       <div class="relative flex-2 absolute bottom-0 left-18">
+          <%= vite_image_tag 'images/dragon_frame.png' %>
+       </div>
+    </div>  
+    <div class="text-center flex-2 w-4/5 h-full">
+    <br/><br/>
+      <h2 class="text-6xl font-semibold text-lime-400 text-center">SUBASTAS</h2>
+    </div>
+  </div>
+
+        <!-- item list -->
+  <div class="flex flex-row w-full h-max">
+      <div class="flex flex-row w-full bg-black opacity-36 text-center">
+           <div class="container">   
+            <%= link_to "Crear Subasta", new_auction_path, class:"w-full text-center border-2 border-indigo-400 bg-indigo-800 hover:bg-indigo-900 text-lime-500 font-bold py-2 px-4 rounded inline-flex"%>
+           </div>
+           <div class="container">   
+            <%= link_to "Compra/Venta", products_path, class:"w-full border-2 border-indigo-400 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex"%>
+          </div>
+           <div class="container">   
+            <%= link_to "Servicios", bookings_path, class:"w-full border-2 border-indigo-400 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex"%>
+            </div>
+                       <div class="container">   
+            <%= link_to "Entretenimiento", shows_path, class:"w-full border-2 border-indigo-400 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex"%>
+            </div>
+        </div>
+    </div>
+    <div class="flex-1 flex-nowra border-2 border-double rounded border-yellow-600 bg-gray-800 flex-1 w-96 hidden lg:block ring-lime-300 h-screen">
+    
+      <ul id="side-menu" x-data="{selected:1}" class="w-full float-none flex flex-col font-medium text-indigo-300 lg:inline-block">
+        <%= render "auctions/ah_menu" %>
+      </ul>
+    </div>
+    <div class="flex=2 flex-nowra border-2 border-double rounded border-yellow-600 w-4/5 ring-lime-300">
+      <div></div>
+        <div class="p-6 bg-white bg-gray-800 rounded-lg shadow-lg h-full">
+          <%= render "auctions/list_results" %>
+        </div>
+      </div>  
+    </div>
+  </div>
+  
+</div>
+

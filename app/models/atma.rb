@@ -1,0 +1,2 @@
+class Atma < ApplicationRecord
+end

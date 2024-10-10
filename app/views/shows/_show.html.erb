@@ -1,0 +1,112 @@
+<div id="<%= dom_id show %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Name:</strong>
+    <%= show.name %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Category:</strong>
+    <%= show.category %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Description:</strong>
+    <%= show.description %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Type:</strong>
+    <%= show.type %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Ticket cost:</strong>
+    <%= show.ticket_cost %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Total cost:</strong>
+    <%= show.total_cost %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Ticket quantity:</strong>
+    <%= show.ticket_quantity %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Location city:</strong>
+    <%= show.location_city %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Location address:</strong>
+    <%= show.location_address %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Location lat:</strong>
+    <%= show.location_lat %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Location lng:</strong>
+    <%= show.location_lng %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Community benefit:</strong>
+    <%= show.community_benefit %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Community servicescore:</strong>
+    <%= show.community_serviceScore %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Target group:</strong>
+    <%= show.target_group %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Age group:</strong>
+    <%= show.age_group %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Is artist:</strong>
+    <%= show.is_artist %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Non profit:</strong>
+    <%= show.non_profit %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Tags:</strong>
+    <%= show.tags %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Social contribution:</strong>
+    <%= show.social_contribution %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Overall score:</strong>
+    <%= show.overall_score %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Comments:</strong>
+    <%= show.comments %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this show", show, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this show', edit_show_path(show), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
