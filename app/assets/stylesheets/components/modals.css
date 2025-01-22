@@ -1,0 +1,85 @@
+/* components/modals.css */
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: var(--z-index-high);
+}
+
+/* Modal Container */
+.modal {
+    background-color: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    z-index: var(--z-index-high);
+}
+
+/* Modal Header */
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-md);
+}
+
+.modal-header .modal-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+}
+
+.modal-header .modal-close {
+    font-size: var(--font-size-lg);
+    color: var(--color-dark-gray);
+    cursor: pointer;
+}
+
+/* Modal Body */
+.modal-body {
+    font-size: var(--font-size-md);
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Modal Footer */
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--spacing-sm);
+}
+
+.modal-footer .modal-button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+    background-color: var(--color-dark-blue);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.modal-footer .modal-button:hover,
+.modal-footer .modal-button:focus {
+    background-color: var(--color-golden-yellow);
+    color: var(--color-dark-blue);
+}
+
+/* Accessibility */
+.modal-close:focus,
+.modal-button:focus {
+    outline: 2px dashed var(--color-golden-yellow);
+    outline-offset: 2px;
+}

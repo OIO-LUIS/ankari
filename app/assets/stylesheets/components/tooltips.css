@@ -1,0 +1,51 @@
+/* components/tooltips.css */
+
+/* Tooltip Container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Tooltip Text */
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    text-align: center;
+    padding: var(--spacing-sm);
+    border-radius: var(--border-radius-sm);
+    position: absolute;
+    z-index: var(--z-index-medium);
+    bottom: 125%; /* Position above the element */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip Arrow */
+.tooltip .tooltip-text::after {
+    content: '';
+    position: absolute;
+    top: 100%; /* Position at the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--color-dark-blue) transparent transparent transparent;
+}
+
+/* Show Tooltip */
+.tooltip:hover .tooltip-text,
+.tooltip:focus .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Accessibility */
+.tooltip:focus .tooltip-text {
+    outline: 2px dashed var(--color-golden-yellow);
+    outline-offset: 2px;
+}

@@ -1,0 +1,135 @@
+/* utilities/grid.css */
+
+/* Grid Container Utilities */
+.grid {
+    display: grid;
+}
+
+.grid-inline {
+    display: inline-grid;
+}
+
+/* Grid Template Columns Utilities */
+.grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-cols-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-cols-6 {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-cols-12 {
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/* Grid Template Rows Utilities */
+.grid-rows-1 {
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.grid-rows-2 {
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-rows-3 {
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-rows-4 {
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.grid-rows-5 {
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.grid-rows-6 {
+    grid-template-rows: repeat(6, 1fr);
+}
+
+/* Grid Gap Utilities */
+.grid-gap-0 {
+    gap: 0;
+}
+
+.grid-gap-sm {
+    gap: var(--spacing-sm);
+}
+
+.grid-gap-md {
+    gap: var(--spacing-md);
+}
+
+.grid-gap-lg {
+    gap: var(--spacing-lg);
+}
+
+/* Grid Column Utilities */
+.col-span-1 {
+    grid-column: span 1 / span 1;
+}
+
+.col-span-2 {
+    grid-column: span 2 / span 2;
+}
+
+.col-span-3 {
+    grid-column: span 3 / span 3;
+}
+
+.col-span-4 {
+    grid-column: span 4 / span 4;
+}
+
+.col-span-5 {
+    grid-column: span 5 / span 5;
+}
+
+.col-span-6 {
+    grid-column: span 6 / span 6;
+}
+
+.col-span-12 {
+    grid-column: span 12 / span 12;
+}
+
+/* Grid Row Utilities */
+.row-span-1 {
+    grid-row: span 1 / span 1;
+}
+
+.row-span-2 {
+    grid-row: span 2 / span 2;
+}
+
+.row-span-3 {
+    grid-row: span 3 / span 3;
+}
+
+.row-span-4 {
+    grid-row: span 4 / span 4;
+}
+
+.row-span-5 {
+    grid-row: span 5 / span 5;
+}
+
+.row-span-6 {
+    grid-row: span 6 / span 6;
+}

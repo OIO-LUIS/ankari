@@ -1,0 +1,167 @@
+/* pages/funding.css */
+
+/* Funding Page Container */
+.funding-page {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-lg);
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+/* Funding Header */
+.funding-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.funding-header .title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+}
+
+.funding-header .filter {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.funding-header .filter select {
+    padding: var(--spacing-sm);
+    border: 1px solid var(--color-light-gray);
+    border-radius: var(--border-radius-sm);
+}
+
+/* Campaign List */
+.campaign-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+/* Campaign Card */
+.campaign-card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-gray);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.campaign-card:hover {
+    transform: translateY(-5px);
+}
+
+.campaign-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid var(--color-light-gray);
+}
+
+.campaign-card .details {
+    padding: var(--spacing-md);
+}
+
+.campaign-card .title {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+}
+
+.campaign-card .description {
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+}
+
+.campaign-card .progress {
+    margin-bottom: var(--spacing-md);
+}
+
+.campaign-card .progress-bar {
+    height: 20px;
+    background-color: var(--color-success);
+    width: 0;
+    transition: width 0.3s;
+}
+
+.campaign-card .goal {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark-gray);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Donation Form */
+.donation-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: var(--color-light-gray);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.donation-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.donation-form .form-label {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark-blue);
+}
+
+.donation-form .form-input {
+    padding: var(--spacing-sm);
+    font-size: var(--font-size-md);
+    color: var(--color-text);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-gray);
+    border-radius: var(--border-radius-sm);
+    transition: border-color 0.3s;
+}
+
+.donation-form .form-input:focus {
+    border-color: var(--color-golden-yellow);
+    outline: none;
+}
+
+.donation-form .form-button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+    background-color: var(--color-dark-blue);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.donation-form .form-button:hover,
+.donation-form .form-button:focus {
+    background-color: var(--color-golden-yellow);
+    color: var(--color-dark-blue);
+}
+
+/* Accessibility */
+.campaign-card:focus,
+.donation-form .form-input:focus,
+.donation-form .form-button:focus {
+    outline: 2px dashed var(--color-golden-yellow);
+    outline-offset: 2px;
+}

@@ -1,0 +1,153 @@
+/* pages/profile.css */
+
+/* Profile Page Container */
+.profile-page {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-lg);
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header .title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+}
+
+.profile-header .edit-button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    background-color: var(--color-golden-yellow);
+    color: var(--color-dark-blue);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.profile-header .edit-button:hover,
+.profile-header .edit-button:focus {
+    background-color: var(--color-dark-gray);
+    color: var(--color-white);
+}
+
+/* Profile Picture */
+.profile-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--color-golden-yellow);
+}
+
+/* Profile Information */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.profile-info .info-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.profile-info .info-label {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark-blue);
+}
+
+.profile-info .info-value {
+    font-size: var(--font-size-md);
+    color: var(--color-text);
+}
+
+/* Settings Section */
+.settings-section {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: var(--color-light-gray);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.settings-section .section-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+}
+
+.settings-section .setting-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.settings-section .setting-group .setting-label {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark-blue);
+}
+
+.settings-section .setting-group .setting-input {
+    padding: var(--spacing-sm);
+    font-size: var(--font-size-md);
+    color: var(--color-text);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-gray);
+    border-radius: var(--border-radius-sm);
+    transition: border-color 0.3s;
+}
+
+.settings-section .setting-group .setting-input:focus {
+    border-color: var(--color-golden-yellow);
+    outline: none;
+}
+
+.settings-section .save-button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+    background-color: var(--color-dark-blue);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.settings-section .save-button:hover,
+.settings-section .save-button:focus {
+    background-color: var(--color-golden-yellow);
+    color: var(--color-dark-blue);
+}
+
+/* Accessibility */
+.profile-header .edit-button:focus,
+.profile-picture img:focus,
+.settings-section .setting-input:focus,
+.settings-section .save-button:focus {
+    outline: 2px dashed var(--color-golden-yellow);
+    outline-offset: 2px;
+}

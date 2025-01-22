@@ -1,0 +1,63 @@
+/* components/dropdowns.css */
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Toggle */
+.dropdown-toggle {
+    cursor: pointer;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+    background-color: var(--color-golden-yellow);
+    color: var(--color-dark-blue);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-gray);
+    border-radius: var(--border-radius-sm);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: var(--z-index-medium);
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+/* Dropdown Menu Items */
+.dropdown-menu a {
+    display: block;
+    padding: var(--spacing-sm) var(--spacing-md);
+    color: var(--color-dark-blue);
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus {
+    background-color: var(--color-golden-yellow);
+    color: var(--color-dark-blue);
+}
+
+/* Accessibility */
+.dropdown-toggle:focus,
+.dropdown-menu a:focus {
+    outline: 2px dashed var(--color-golden-yellow);
+    outline-offset: 2px;
+}

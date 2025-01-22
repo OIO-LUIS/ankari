@@ -1,0 +1,76 @@
+/* layout/main.css */
+
+/* Main Container 
+Use .main to create a flex container for the main content of the page.
+This container ensures the main section grows to fill available space. */
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-lg);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    flex-grow: 1;
+}
+
+/* Section 
+Use .main .section to create a distinct section within the main content.
+These sections are separated by margin and have a light gray background with a border radius. */
+.main .section {
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: var(--color-light-gray);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Header 
+Use .main .section-header to style the headers within sections.
+These headers are larger, bold, and use the primary color. */
+.main .section-header {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+}
+
+/* Section Content 
+Use .main .section-content to style the content within sections.
+This content has a standard font size and line height, ensuring readability. */
+.main .section-content {
+    font-size: var(--font-size-md);
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+/* Cards 
+Use .main .card to create card components within the main content.
+Cards are styled with padding, a white background, and a light gray border. */
+.main .card {
+    padding: var(--spacing-md);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-gray);
+    border-radius: var(--border-radius-sm);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--spacing-md);
+}
+
+.main .card-header {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+}
+
+.main .card-content {
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+}
+
+/* Accessibility 
+Adds focus outline for better accessibility on focusable elements inside main container. */
+.main a:focus,
+.main button:focus,
+.main input:focus {
+    outline: 2px dashed var(--color-golden-yellow);
+    outline-offset: 2px;
+}

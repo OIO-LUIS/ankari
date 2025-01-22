@@ -1,0 +1,153 @@
+/* pages/home.css */
+
+/* Home Page Container 
+Use .home-page for the main container of the home page.
+This container ensures the page content is styled consistently. */
+.home-page {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-lg);
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+/* Hero Section 
+Use .hero to create a prominent hero section at the top of the home page.
+This section is designed to grab attention with a bold background and central alignment. */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-lg);
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.hero .title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-md);
+}
+
+.hero .subtitle {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.hero .cta-button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark-blue);
+    background-color: var(--color-golden-yellow);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero .cta-button:hover,
+.hero .cta-button:focus {
+    background-color: var(--color-dark-gray);
+    color: var(--color-white);
+}
+
+/* Featured Content 
+Use .featured-content to create a grid layout for displaying featured items.
+Each item is styled as a card with hover effects for a modern look. */
+.featured-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.featured-content .content-card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-gray);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.featured-content .content-card:hover {
+    transform: translateY(-5px);
+}
+
+.featured-content .content-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid var(--color-light-gray);
+}
+
+.featured-content .content-card .details {
+    padding: var(--spacing-md);
+}
+
+.featured-content .content-card .title {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+}
+
+.featured-content .content-card .description {
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Call to Action Section 
+Use .cta-section to create a call to action section, encouraging users to take the next step.
+This section is centered and styled to stand out. */
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-lg);
+    background-color: var(--color-light-gray);
+    color: var(--color-dark-blue);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.cta-section .cta-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-md);
+}
+
+.cta-section .cta-button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+    background-color: var(--color-dark-blue);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-section .cta-button:hover,
+.cta-section .cta-button:focus {
+    background-color: var(--color-golden-yellow);
+    color: var(--color-dark-blue);
+}
+
+/* Accessibility 
+Adds focus outline for better accessibility on focusable elements. */
+.hero .cta-button:focus,
+.featured-content .content-card:focus,
+.cta-section .cta-button:focus {
+    outline: 2px dashed var(--color-golden-yellow);
+    outline-offset: 2px;
+}

@@ -1,0 +1,43 @@
+/* components/badges.css */
+
+/* Badge Container */
+.badge {
+    display: inline-block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+    background-color: var(--color-dark-blue);
+    border-radius: var(--border-radius-sm);
+}
+
+/* Badge Types */
+.badge-primary {
+    background-color: var(--color-dark-blue);
+}
+
+.badge-secondary {
+    background-color: var(--color-dark-gray);
+}
+
+.badge-success {
+    background-color: #28a745;
+}
+
+.badge-info {
+    background-color: #17a2b8;
+}
+
+.badge-warning {
+    background-color: #ffc107;
+}
+
+.badge-danger {
+    background-color: #dc3545;
+}
+
+/* Accessibility */
+.badge:focus {
+    outline: 2px dashed var(--color-golden-yellow);
+    outline-offset: 2px;
+}

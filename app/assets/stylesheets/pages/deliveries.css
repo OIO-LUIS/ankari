@@ -1,7 +1,7 @@
-/* pages/auction.css */
+/* pages/deliveries.css */
 
-/* Auction Page Container */
-.auction-page {
+/* Deliveries Page Container */
+.deliveries-page {
     display: flex;
     flex-direction: column;
     padding: var(--spacing-lg);
@@ -9,8 +9,8 @@
     color: var(--color-text);
 }
 
-/* Auction Header */
-.auction-header {
+/* Deliveries Header */
+.deliveries-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,29 +22,32 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.auction-header .title {
+.deliveries-header .title {
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-bold);
 }
 
-.auction-header .timer {
-    font-size: var(--font-size-md);
-    font-weight: var(--font-weight-bold);
-    background-color: var(--color-golden-yellow);
-    color: var(--color-dark-blue);
-    padding: var(--spacing-sm) var(--spacing-md);
+.deliveries-header .filter {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.deliveries-header .filter select {
+    padding: var(--spacing-sm);
+    border: 1px solid var(--color-light-gray);
     border-radius: var(--border-radius-sm);
 }
 
-/* Auction Items Container */
-.auction-items {
+/* Deliveries List */
+.deliveries-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: var(--spacing-lg);
 }
 
-/* Auction Item Card */
-.auction-item {
+/* Delivery Card */
+.delivery-card {
     background-color: var(--color-white);
     border: 1px solid var(--color-light-gray);
     border-radius: var(--border-radius-md);
@@ -53,73 +56,101 @@
     transition: transform 0.3s;
 }
 
-.auction-item:hover {
+.delivery-card:hover {
     transform: translateY(-5px);
 }
 
-.auction-item img {
+.delivery-card img {
     width: 100%;
     height: auto;
     border-bottom: 1px solid var(--color-light-gray);
 }
 
-.auction-item .details {
+.delivery-card .details {
     padding: var(--spacing-md);
 }
 
-.auction-item .title {
+.delivery-card .title {
     font-size: var(--font-size-md);
     font-weight: var(--font-weight-bold);
     margin-bottom: var(--spacing-sm);
     color: var(--color-primary);
 }
 
-.auction-item .description {
+.delivery-card .description {
     font-size: var(--font-size-sm);
     color: var(--color-text);
     margin-bottom: var(--spacing-md);
 }
 
-.auction-item .current-bid {
+.delivery-card .status {
     font-size: var(--font-size-md);
     font-weight: var(--font-weight-bold);
     color: var(--color-success);
     margin-bottom: var(--spacing-sm);
 }
 
-.auction-item .bid-form {
+/* Tracking Form */
+.tracking-form {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: var(--color-light-gray);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tracking-form .form-group {
+    display: flex;
+    flex-direction: column;
     gap: var(--spacing-sm);
 }
 
-.auction-item .bid-form input {
-    flex-grow: 1;
-    padding: var(--spacing-sm);
-    border: 1px solid var(--color-light-gray);
-    border-radius: var(--border-radius-sm);
+.tracking-form .form-label {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark-blue);
 }
 
-.auction-item .bid-form button {
+.tracking-form .form-input {
+    padding: var(--spacing-sm);
+    font-size: var(--font-size-md);
+    color: var(--color-text);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-gray);
+    border-radius: var(--border-radius-sm);
+    transition: border-color 0.3s;
+}
+
+.tracking-form .form-input:focus {
+    border-color: var(--color-golden-yellow);
+    outline: none;
+}
+
+.tracking-form .form-button {
     padding: var(--spacing-sm) var(--spacing-md);
-    background-color: var(--color-dark-blue);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
     color: var(--color-white);
+    background-color: var(--color-dark-blue);
     border: none;
     border-radius: var(--border-radius-sm);
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.auction-item .bid-form button:hover,
-.auction-item .bid-form button:focus {
+.tracking-form .form-button:hover,
+.tracking-form .form-button:focus {
     background-color: var(--color-golden-yellow);
     color: var(--color-dark-blue);
 }
 
 /* Accessibility */
-.auction-item:focus,
-.auction-item .bid-form input:focus,
-.auction-item .bid-form button:focus {
+.delivery-card:focus,
+.tracking-form .form-input:focus,
+.tracking-form .form-button:focus {
     outline: 2px dashed var(--color-golden-yellow);
     outline-offset: 2px;
 }

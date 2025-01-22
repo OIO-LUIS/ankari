@@ -1,0 +1,66 @@
+/* base/variables.css */
+
+/* Color Variables */
+:root {
+    --color-dark-blue: #1F77B4; /* Dark blue for primary elements */
+    --color-golden-yellow: #FFCC00; /* Golden yellow for secondary elements */
+    --color-dark-gray: #666666; /* Dark gray for accents */
+    --color-light-gray: #f4f4f4; /* Light gray for backgrounds */
+    --color-white: #ffffff; /* Pure white for backgrounds and text */
+    --color-black: #000000; /* Pure black for text and accents */
+
+    /* Additional Colors */
+    --color-primary: var(--color-dark-blue); /* Primary theme color */
+    --color-secondary: var(--color-golden-yellow); /* Secondary theme color */
+    --color-accent: var(--color-dark-gray); /* Accent color */
+    --color-background: var(--color-white); /* Background color */
+    --color-text: var(--color-black); /* Text color */
+
+    /* Font Variables */
+    --font-family-base: 'Roboto', sans-serif; /* Base font family */
+    --font-size-base: 16px; /* Base font size */
+    --font-size-lg: 1.25rem; /* Large font size */
+    --font-size-md: 1rem; /* Medium font size */
+    --font-size-sm: 0.875rem; /* Small font size */
+    --font-weight-normal: 400; /* Normal font weight */
+    --font-weight-bold: 700; /* Bold font weight */
+
+    /* Spacing Variables */
+    --spacing-xs: 0.25rem; /* Extra small spacing */
+    --spacing-sm: 0.5rem; /* Small spacing */
+    --spacing-md: 1rem; /* Medium spacing */
+    --spacing-lg: 1.5rem; /* Large spacing */
+    --spacing-xl: 2rem; /* Extra large spacing */
+
+    /* Border Radius Variables */
+    --border-radius-sm: 0.25rem; /* Small border radius */
+    --border-radius-md: 0.5rem; /* Medium border radius */
+    --border-radius-lg: 1rem; /* Large border radius */
+
+    /* Z-Index Variables */
+    --z-index-low: 10; /* Low z-index */
+    --z-index-medium: 50; /* Medium z-index */
+    --z-index-high: 100; /* High z-index */
+}
+
+/* Example Usage */
+body {
+    font-family: var(--font-family-base); /* Applying base font family */
+    font-size: var(--font-size-base); /* Applying base font size */
+    color: var(--color-text); /* Applying text color */
+    background-color: var(--color-background); /* Applying background color */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-primary); /* Applying primary color to headings */
+}
+
+a {
+    color: var(--color-secondary); /* Applying secondary color to links */
+}
+
+button {
+    padding: var(--spacing-sm) var(--spacing-md); /* Applying padding to buttons */
+    border-radius: var(--border-radius-sm); /* Applying border radius to buttons */
+    z-index: var(--z-index-medium); /* Applying z-index to buttons */
+}

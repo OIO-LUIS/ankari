@@ -1,0 +1,36 @@
+/* components/tables.css */
+
+/* Table Container */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Table Header */
+.table th {
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    padding: var(--spacing-sm);
+    text-align: left;
+    border-bottom: 2px solid var(--color-golden-yellow);
+}
+
+/* Table Body */
+.table td {
+    padding: var(--spacing-sm);
+    border-bottom: 1px solid var(--color-light-gray);
+    color: var(--color-text);
+}
+
+/* Table Row Hover */
+.table tr:hover {
+    background-color: var(--color-light-gray);
+}
+
+/* Accessibility */
+.table th:focus,
+.table td:focus {
+    outline: 2px dashed var(--color-golden-yellow);
+    outline-offset: 2px;
+}

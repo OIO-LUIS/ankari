@@ -1,0 +1,67 @@
+/* layout/sidebar.css */
+
+/* Sidebar Container */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    padding: var(--spacing-md);
+    border-right: 2px solid var(--color-golden-yellow);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-index-medium);
+}
+
+/* Sidebar Header */
+.sidebar .sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-lg);
+}
+
+.sidebar .sidebar-header .logo {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+/* Sidebar Navigation */
+.sidebar .nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.sidebar .nav-menu a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: var(--font-size-md);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius-sm);
+    transition: background-color 0.3s;
+}
+
+.sidebar .nav-menu a:hover,
+.sidebar .nav-menu a:focus {
+    background-color: var(--color-golden-yellow);
+    color: var(--color-dark-blue);
+}
+
+/* Sidebar Footer */
+.sidebar .sidebar-footer {
+    margin-top: auto;
+    font-size: var(--font-size-sm);
+    color: var(--color-light-gray);
+}
+
+/* Accessibility */
+.sidebar a:focus {
+    outline: 2px dashed var(--color-golden-yellow);
+    outline-offset: 2px;
+}

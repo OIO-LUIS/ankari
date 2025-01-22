@@ -1,0 +1,39 @@
+/* components/cards.css */
+
+/* Card Container */
+.card {
+    padding: var(--spacing-md);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-gray);
+    border-radius: var(--border-radius-sm);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--spacing-md);
+}
+
+/* Card Header */
+.card-header {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+}
+
+/* Card Content */
+.card-content {
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+}
+
+/* Card Footer */
+.card-footer {
+    margin-top: var(--spacing-md);
+    font-size: var(--font-size-sm);
+    color: var(--color-dark-gray);
+    text-align: right;
+}
+
+/* Accessibility */
+.card:focus {
+    outline: 2px dashed var(--color-golden-yellow);
+    outline-offset: 2px;
+}

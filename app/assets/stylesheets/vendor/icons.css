@@ -1,0 +1,244 @@
+/* vendor/icons.css */
+
+/* Base Icon Class */
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Default icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all browsers */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Icon Sizes */
+.icon-sm {
+    font-size: 18px;
+}
+
+.icon-md {
+    font-size: 24px;
+}
+
+.icon-lg {
+    font-size: 36px;
+}
+
+.icon-xl {
+    font-size: 48px;
+}
+
+/* Social Media Icons */
+.icon-facebook::before {
+    content: 'facebook';
+}
+
+.icon-twitter::before {
+    content: 'twitter';
+}
+
+.icon-instagram::before {
+    content: 'instagram';
+}
+
+.icon-linkedin::before {
+    content: 'linkedin';
+}
+
+.icon-youtube::before {
+    content: 'youtube';
+}
+
+/* Action Icons */
+.icon-add::before {
+    content: 'add';
+}
+
+.icon-edit::before {
+    content: 'edit';
+}
+
+.icon-delete::before {
+    content: 'delete';
+}
+
+.icon-save::before {
+    content: 'save';
+}
+
+.icon-download::before {
+    content: 'download';
+}
+
+/* Navigation Icons */
+.icon-home::before {
+    content: 'home';
+}
+
+.icon-back::before {
+    content: 'arrow_back';
+}
+
+.icon-forward::before {
+    content: 'arrow_forward';
+}
+
+.icon-menu::before {
+    content: 'menu';
+}
+
+.icon-search::before {
+    content: 'search';
+}
+
+/* File Icons */
+.icon-file::before {
+    content: 'insert_drive_file';
+}
+
+.icon-folder::before {
+    content: 'folder';
+}
+
+.icon-upload::before {
+    content: 'cloud_upload';
+}
+
+.icon-download::before {
+    content: 'cloud_download';
+}
+
+.icon-attachment::before {
+    content: 'attachment';
+}
+
+/* User Icons */
+.icon-user::before {
+    content: 'person';
+}
+
+.icon-user-add::before {
+    content: 'person_add';
+}
+
+.icon-user-remove::before {
+    content: 'person_remove';
+}
+
+.icon-user-edit::before {
+    content: 'edit';
+}
+
+.icon-user-settings::before {
+    content: 'settings';
+}
+
+/* Notification Icons */
+.icon-notification::before {
+    content: 'notifications';
+}
+
+.icon-notification-add::before {
+    content: 'notifications_active';
+}
+
+.icon-notification-remove::before {
+    content: 'notifications_off';
+}
+
+.icon-notification-settings::before {
+    content: 'settings';
+}
+
+/* Miscellaneous Icons */
+.icon-settings::before {
+    content: 'settings';
+}
+
+.icon-help::before {
+    content: 'help';
+}
+
+.icon-info::before {
+    content: 'info';
+}
+
+.icon-warning::before {
+    content: 'warning';
+}
+
+.icon-error::before {
+    content: 'error';
+}
+
+.icon-check::before {
+    content: 'check';
+}
+
+.icon-close::before {
+    content: 'close';
+}
+
+.icon-refresh::before {
+    content: 'refresh';
+}
+
+.icon-lock::before {
+    content: 'lock';
+}
+
+.icon-unlock::before {
+    content: 'lock_open';
+}
+
+.icon-calendar::before {
+    content: 'calendar_today';
+}
+
+.icon-clock::before {
+    content: 'access_time';
+}
+
+.icon-location::before {
+    content: 'location_on';
+}
+
+.icon-phone::before {
+    content: 'phone';
+}
+
+.icon-email::before {
+    content: 'email';
+}
+
+.icon-print::before {
+    content: 'print';
+}
+
+.icon-share::before {
+    content: 'share';
+}
+
+.icon-star::before {
+    content: 'star';
+}
+
+.icon-star-border::before {
+    content: 'star_border';
+}
+
+.icon-thumb-up::before {
+    content: 'thumb_up';
+}
+
+.icon-thumb-down::before {
+    content: 'thumb_down';
+}

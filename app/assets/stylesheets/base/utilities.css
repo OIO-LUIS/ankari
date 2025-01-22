@@ -1,0 +1,67 @@
+/* base/utilities.css */
+
+/* Margin Utilities */
+.m-0 { margin: 0 !important; /* Removes margin */ }
+.mt-0 { margin-top: 0 !important; /* Removes top margin */ }
+.mr-0 { margin-right: 0 !important; /* Removes right margin */ }
+.mb-0 { margin-bottom: 0 !important; /* Removes bottom margin */ }
+.ml-0 { margin-left: 0 !important; /* Removes left margin */ }
+.m-1 { margin: 0.25rem !important; /* Sets margin to 0.25rem */ }
+.mt-1 { margin-top: 0.25rem !important; /* Sets top margin to 0.25rem */ }
+.mr-1 { margin-right: 0.25rem !important; /* Sets right margin to 0.25rem */ }
+.mb-1 { margin-bottom: 0.25rem !important; /* Sets bottom margin to 0.25rem */ }
+.ml-1 { margin-left: 0.25rem !important; /* Sets left margin to 0.25rem */ }
+
+/* Padding Utilities */
+.p-0 { padding: 0 !important; /* Removes padding */ }
+.pt-0 { padding-top: 0 !important; /* Removes top padding */ }
+.pr-0 { padding-right: 0 !important; /* Removes right padding */ }
+.pb-0 { padding-bottom: 0 !important; /* Removes bottom padding */ }
+.pl-0 { padding-left: 0 !important; /* Removes left padding */ }
+.p-1 { padding: 0.25rem !important; /* Sets padding to 0.25rem */ }
+.pt-1 { padding-top: 0.25rem !important; /* Sets top padding to 0.25rem */ }
+.pr-1 { padding-right: 0.25rem !important; /* Sets right padding to 0.25rem */ }
+.pb-1 { padding-bottom: 0.25rem !important; /* Sets bottom padding to 0.25rem */ }
+.pl-1 { padding-left: 0.25rem !important; /* Sets left padding to 0.25rem */ }
+
+/* Display Utilities */
+.d-block { display: block !important; /* Sets display to block */ }
+.d-inline { display: inline !important; /* Sets display to inline */ }
+.d-inline-block { display: inline-block !important; /* Sets display to inline-block */ }
+.d-flex { display: flex !important; /* Sets display to flex */ }
+.d-inline-flex { display: inline-flex !important; /* Sets display to inline-flex */ }
+.d-none { display: none !important; /* Hides element */ }
+
+/* Flex Utilities */
+.flex-row { flex-direction: row !important; /* Sets flex direction to row */ }
+.flex-column { flex-direction: column !important; /* Sets flex direction to column */ }
+.flex-wrap { flex-wrap: wrap !important; /* Enables flex wrapping */ }
+.flex-nowrap { flex-wrap: nowrap !important; /* Disables flex wrapping */ }
+.justify-content-start { justify-content: flex-start !important; /* Aligns items at the start */ }
+.justify-content-center { justify-content: center !important; /* Aligns items at the center */ }
+.justify-content-end { justify-content: flex-end !important; /* Aligns items at the end */ }
+.align-items-start { align-items: flex-start !important; /* Aligns items at the start */ }
+.align-items-center { align-items: center !important; /* Aligns items at the center */ }
+.align-items-end { align-items: flex-end !important; /* Aligns items at the end */ }
+
+/* Text Utilities */
+.text-left { text-align: left !important; /* Aligns text to the left */ }
+.text-center { text-align: center !important; /* Aligns text to the center */ }
+.text-right { text-align: right !important; /* Aligns text to the right */ }
+.text-bold { font-weight: bold !important; /* Sets text to bold */ }
+.text-italic { font-style: italic !important; /* Sets text to italic */ }
+.text-uppercase { text-transform: uppercase !important; /* Transforms text to uppercase */ }
+.text-lowercase { text-transform: lowercase !important; /* Transforms text to lowercase */ }
+.text-capitalize { text-transform: capitalize !important; /* Capitalizes text */ }
+
+/* Visibility Utilities */
+.visible { visibility: visible !important; /* Makes element visible */ }
+.invisible { visibility: hidden !important; /* Hides element but keeps space */ }
+
+/* Z-Index Utilities */
+.z-0 { z-index: 0 !important; /* Sets z-index to 0 */ }
+.z-10 { z-index: 10 !important; /* Sets z-index to 10 */ }
+.z-20 { z-index: 20 !important; /* Sets z-index to 20 */ }
+.z-30 { z-index: 30 !important; /* Sets z-index to 30 */ }
+.z-40 { z-index: 40 !important; /* Sets z-index to 40 */ }
+.z-50 { z-index: 50 !important; /* Sets z-index to 50 */ }

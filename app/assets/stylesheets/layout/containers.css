@@ -1,0 +1,94 @@
+/* layout/containers.css */
+
+/* General Container 
+Use .container for a centered, responsive container with max width 1200px.
+Perfect for wrapping main content sections. */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-md);
+}
+
+/* Fluid Container 
+Use .container-fluid for a full-width container that spans the entire viewport.
+Ideal for sections that need to utilize the entire width of the screen. */
+.container-fluid {
+    width: 100%;
+    padding: var(--spacing-md);
+}
+
+/* Card Container 
+Use .card to create a content card with padding, background color, border, and shadow.
+Great for displaying boxed content like articles, profiles, or product details. */
+.card {
+    padding: var(--spacing-md);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-gray);
+    border-radius: var(--border-radius-sm);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: var(--spacing-md);
+}
+
+.card-header {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+}
+
+.card-content {
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+}
+
+/* Section Container 
+Use .section for a section with padding, background color, border, and shadow.
+Perfect for separating different parts of a page. */
+.section {
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background-color: var(--color-light-gray);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+}
+
+.section-content {
+    font-size: var(--font-size-md);
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+/* Flex Container 
+Use .flex-container for a flexible container with wrapping and gaps between items.
+Excellent for creating responsive, flexible layouts. */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.flex-item {
+    flex: 1 1 auto;
+    padding: var(--spacing-md);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-gray);
+    border-radius: var(--border-radius-sm);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Accessibility 
+Adds focus outline for better accessibility on focusable elements inside containers. */
+.container a:focus,
+.container button:focus,
+.container input:focus {
+    outline: 2px dashed var(--color-golden-yellow);
+    outline-offset: 2px;
+}

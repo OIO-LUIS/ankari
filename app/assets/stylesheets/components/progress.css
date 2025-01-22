@@ -1,0 +1,44 @@
+/* components/progress.css */
+
+/* Progress Container */
+.progress {
+    width: 100%;
+    background-color: var(--color-light-gray);
+    border-radius: var(--border-radius-sm);
+    overflow: hidden;
+    margin-bottom: var(--spacing-md);
+}
+
+/* Progress Bar */
+.progress-bar {
+    height: 20px;
+    background-color: var(--color-dark-blue);
+    width: 0;
+    transition: width 0.3s;
+}
+
+/* Progress Bar Success */
+.progress-bar-success {
+    background-color: #28a745;
+}
+
+/* Progress Bar Info */
+.progress-bar-info {
+    background-color: #17a2b8;
+}
+
+/* Progress Bar Warning */
+.progress-bar-warning {
+    background-color: #ffc107;
+}
+
+/* Progress Bar Danger */
+.progress-bar-danger {
+    background-color: #dc3545;
+}
+
+/* Accessibility */
+.progress-bar:focus {
+    outline: 2px dashed var(--color-golden-yellow);
+    outline-offset: 2px;
+}
